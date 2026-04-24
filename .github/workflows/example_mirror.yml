@@ -61,7 +61,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ "macos-latest", "windows-latest", "ubuntu-20.04" ]
+        os: [ "macos-latest", "windows-latest", "ubuntu-latest" ]
         cache: [ true, false ]
     runs-on: ${{ matrix.os }}
 
@@ -109,7 +109,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ "macos-latest", "ubuntu-20.04" ]
+        os: [ "macos-latest", "ubuntu-latest" ]
         cache: [ true, false ]
     runs-on: ${{ matrix.os }}
 
@@ -139,7 +139,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ "macos-latest", "ubuntu-20.04" ]
+        os: [ "macos-latest", "ubuntu-latest" ]
         cache: [ true, false ]
     runs-on: ${{ matrix.os }}
 
@@ -169,7 +169,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ "macos-latest", "ubuntu-20.04" ]
+        os: [ "macos-latest", "ubuntu-latest" ]
         cache: [ true, false ]
     runs-on: ${{ matrix.os }}
 
@@ -199,7 +199,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # os: [ "windows-latest", "ubuntu-20.04" ]   # Skip install on windows https://github.com/redhat-actions/openshift-tools-installer/issues/50
+        # os: [ "windows-latest", "ubuntu-latest" ]   # Skip install on windows https://github.com/redhat-actions/openshift-tools-installer/issues/50
         cache: [ true, false ]
     runs-on: ubuntu-latest
 
